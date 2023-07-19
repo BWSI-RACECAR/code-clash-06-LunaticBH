@@ -58,7 +58,7 @@ class Solution:
             output = []
             answer = []
             
-            for i in len(alist):
+            for i in alist:
                 answer.append(round(alist[i]))
             uniqueNumbers = set(answer)
             for i in range(min, max):
