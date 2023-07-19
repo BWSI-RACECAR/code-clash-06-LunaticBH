@@ -59,8 +59,10 @@ class Solution:
             answer = []
             
             for i in alist:
-                answer.append(round(alist[i]))
+                answer.append(int(round(alist[i])))
             uniqueNumbers = set(answer)
+            min = int(uniqueNumbers[0])
+            max = int(uniqueNumbers[-1])
             for i in range(min, max):
                 if i not in uniqueNumbers:
                     output.append(i)
